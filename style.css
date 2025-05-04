@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-color: #D7F3D3;*/
+    background-image: url(Img/TechBackground.png);
+    color: #234D36;
+  }
+
+  /* === HEADER === */
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: whitesmoke;
+    box-shadow: 0 2px 5px #234D36;
+    flex-wrap: wrap;
+    z-index: 1000;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #234D36;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #4CAF50;
+  }
+
+  /* === SECCIÓN PRINCIPAL === */
+
+  .principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*padding: 60px 20px;*/
+    padding-top: 130px; /* AJuste */ 
+    height: calc(100vh - 80px);
+    text-align: center;
+    /*background-image: url(Img/TechBackground.png);*/
+  }
+
+  .principal h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #0f451e;
+  }
+  
+  .principal h1 span {
+    display: block;
+  }
+
+  .boton-reserva {
+    padding: 15px 30px;
+    font-size: 1rem;
+    background-color: transparent;
+    color: #234D36;
+    border: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .boton-reserva:hover {
+    background-color: #388e3c;
+    color: white;
+    border-color: #234D36;
+  }
+
+  /* oradores */
+
+  .oradores {
+    padding: 60px 30px;
+    /*background: #D7F3D3;*/
+    text-align: center;
+  }
+  
+  .oradores h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #234D36;
+  }
+  
+  .contenedor-oradores {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .orador {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .orador:hover {
+    transform: translateY(-5px);
+  }
+  
+  .orador img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    height: 200px;
+    margin-bottom: 15px;
+  }
+  
+  .orador h3 {
+    font-size: 1.2rem;
+    color: #234D36;
+    margin-bottom: 10px;
+  }
+  
+  .orador p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.4;
+  }
+  a.orador {
+    text-decoration: none;
+  }
